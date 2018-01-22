@@ -4,7 +4,7 @@ ext {
             versionCode  : 100,
             versionName  : "1.0.0",
             storeFile    : file("D:\\Android\\KeyStore\\MyAndroidLife.jks"),
-            keyAlias         : "LZEntrepreneurRestaurant",
+            keyAlias         : "MyAndroidLife",
             keyPassword      : "lhd144123",
             storePassword    : "lhd144123",
     ]

@@ -11,6 +11,7 @@ import com.umeng.analytics.MobclickAgent;
 import butterknife.ButterKnife;
 import cn.com.lz.entrepreneur.restaurant.Constants;
 import cn.com.lz.entrepreneur.restaurant.R;
+import cn.com.lz.entrepreneur.restaurant.util.PermissionsChecker;
 
 /**
  * Description:主页基础Activity
@@ -35,6 +36,21 @@ public abstract class BaseMainActivity extends AppCompatActivity {
         init();
 
         setListener();
+    }
+
+    @Override
+    protected void onResume() {
+        // 检测程序是否回到前段
+        super.onResume();
+        // 统计时长
+        MobclickAgent.onResume(this);
+        MobclickAgent.onPageStart(TAG);
+
+        // 缺少权限时, 进入权限配置页面
+        if (PermissionsChecker.lacksPermissions(getApplicationContext(), Constants.PERMISSIONS)) {
+            Intent intent = new Intent(this, PermissionsActivity.class);
+            startActivity(intent);
+        }
     }
 
     @Override

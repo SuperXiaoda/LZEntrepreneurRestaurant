@@ -84,6 +84,11 @@ greendao {
     schemaVersion 1
 }
 
+bugly {
+    appId = '6fa523b13f'
+    appKey = 'ded88f3f-040e-4a06-a18a-f0dc9a1890d6'
+}
+
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     /**
