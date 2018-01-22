@@ -1,24 +1,34 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
+ext {
+    configuration = [
+            versionCode  : 100,
+            versionName  : "1.0.0",
+            storeFile    : file("D:\\Android\\KeyStore\\MyAndroidLife.jks"),
+            keyAlias         : "LZEntrepreneurRestaurant",
+            keyPassword      : "lhd144123",
+            storePassword    : "lhd144123",
+    ]
+}
 
 buildscript {
-    
     repositories {
-        google()
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.1'
-        
-
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
+        classpath 'com.android.tools.build:gradle:2.3.3'
+        // GreenDAO插件
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.2.2'
+        // Bugly符号表插件
+        classpath 'com.tencent.bugly:symtabfileuploader:latest.release'
     }
 }
 
 allprojects {
     repositories {
-        google()
         jcenter()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+        maven { url 'https://maven.google.com' }
     }
 }
 
