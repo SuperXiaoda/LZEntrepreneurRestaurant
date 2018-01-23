@@ -1,0 +1,8 @@
+<resources>
+
+    <!-- 导航栏高度 -->
+    <dimen name="wholeTitleBarHeight">75dp</dimen>
+    <!-- 状态栏高度 -->
+    <dimen name="statusBarHeight">25dp</dimen>
+
+</resources>
