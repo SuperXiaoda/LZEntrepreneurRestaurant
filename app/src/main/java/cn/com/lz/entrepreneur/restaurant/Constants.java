@@ -22,4 +22,14 @@ public interface Constants {
     };
     // 状态栏透明度
     int STATUS_BAR_ALPHA = 0;
+    // 下载目录
+    String PATH_DOWNLOAD = "download/";
+    // 上传目录
+    String PATH_UPLOAD = "upload/";
+    // 编辑目录
+    String PATH_EDIT = "edit/";
+    // 照相目录
+    String PATH_TAKE_PHOTO = "DCIM/TiIntegrity/";
+    // 问题模块最多选择图片数
+    int MAX_PICTURES = 9;
 }

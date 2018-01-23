@@ -15,4 +15,20 @@
 
     <!-- 提示信息 -->
     <string name="lack_of_permission">当前应用缺少必要权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。\n\n最后点击两次后退按钮，即可返回。</string>
+    <string name="exit_by_2_click">再按一次退出程序</string>
+    <string name="invalid_network">连接网络失败</string>
+    <string name="connect_server_timeout">服务器连接超时！</string>
+    <string name="connect_server_fail">连接服务器失败！</string>
+    <string name="unknown_host">连接服务器失败！</string>
+    <string name="error_unknown">未知的主机异常！</string>
+    <string name="error_json_parse">数据解析异常！</string>
+    <string name="error_api">接口请求异常</string>
+    <string name="invalid_sdcard">未检测到可用SD卡！</string>
+    <string name="file_not_exists">文件不存在！</string>
+    <string name="no_support_app">没有支持该文件的应用！</string>
+    <string name="error_data">数据错误！</string>
+    <string name="login_timeout">登录超时，请重新登录！</string>
+    <string name="data_load_failed">数据加载失败！</string>
+    <string name="invalid_server_address">服务器地址格式错误！</string>
+
 </resources>

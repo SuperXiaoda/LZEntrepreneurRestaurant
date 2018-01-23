@@ -167,5 +167,6 @@ dependencies {
     compile 'com.github.frankiesardo:linearlistview:1.0.1@aar'
     // 列表刷新控件
     compile 'com.github.orangegangsters:swipy:1.2.3@aar'
-
+    // 图片选择库
+    compile project(':GalleryFinal')
 }
