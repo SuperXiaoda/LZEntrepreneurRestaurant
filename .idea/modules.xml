@@ -3,9 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/GalleryFinal/GalleryFinal.iml" filepath="$PROJECT_DIR$/GalleryFinal/GalleryFinal.iml" />
+      <module fileurl="file://E:\StudioProject\LZEntrepreneurRestaurant\GalleryFinal\GalleryFinal.iml" filepath="E:\StudioProject\LZEntrepreneurRestaurant\GalleryFinal\GalleryFinal.iml" />
       <module fileurl="file://$PROJECT_DIR$/LZEntrepreneurRestaurant.iml" filepath="$PROJECT_DIR$/LZEntrepreneurRestaurant.iml" />
+      <module fileurl="file://E:\StudioProject\LZEntrepreneurRestaurant\LZEntrepreneurRestaurant.iml" filepath="E:\StudioProject\LZEntrepreneurRestaurant\LZEntrepreneurRestaurant.iml" />
       <module fileurl="file://F:\StudioProject\LZEntrepreneurRestaurant\LZEntrepreneurRestaurant.iml" filepath="F:\StudioProject\LZEntrepreneurRestaurant\LZEntrepreneurRestaurant.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://E:\StudioProject\LZEntrepreneurRestaurant\app\app.iml" filepath="E:\StudioProject\LZEntrepreneurRestaurant\app\app.iml" />
       <module fileurl="file://F:\StudioProject\LZEntrepreneurRestaurant\app\app.iml" filepath="F:\StudioProject\LZEntrepreneurRestaurant\app\app.iml" />
     </modules>
   </component>
