@@ -1,1 +1,1 @@
-include ':app', ':GalleryFinal'
+include ':app', ':GalleryFinal', ':BottomNavigation'

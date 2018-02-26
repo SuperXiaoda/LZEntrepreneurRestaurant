@@ -1,7 +1,8 @@
 package cn.com.lz.entrepreneur.restaurant.fragment;
 
+import android.view.View;
+
 import cn.com.lz.entrepreneur.restaurant.R;
-import cn.com.lz.entrepreneur.restaurant.activity.BaseMainActivity;
 
 /**
  * Description: 我的
@@ -9,14 +10,15 @@ import cn.com.lz.entrepreneur.restaurant.activity.BaseMainActivity;
  * Date: 2018/2/9
  */
 
-public class MineFragment extends BaseMainActivity{
+public class MineFragment extends BaseMainFragment{
+
     @Override
     protected int getContentView() {
         return R.layout.fragment_mine;
     }
 
     @Override
-    protected void init() {
+    protected void init(View rootView) {
 
     }
 
