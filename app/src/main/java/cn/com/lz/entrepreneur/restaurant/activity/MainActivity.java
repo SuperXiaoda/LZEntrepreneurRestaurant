@@ -7,12 +7,14 @@ import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
 
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigation;
+import com.aurelhubert.ahbottomnavigation.AHBottomNavigationItem;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
 import cn.com.lz.entrepreneur.restaurant.R;
+import cn.com.lz.entrepreneur.restaurant.fragment.HomeFragment;
 import cn.com.lz.entrepreneur.restaurant.fragment.MineFragment;
 
 /**
@@ -40,10 +42,16 @@ public class MainActivity extends BaseActivity {
     protected void init() {
         // 设置底部导航布局
         mBottomNavigation.setForceTitlesDisplay(true);
-        mBottomNavigation.setAccentColor(ContextCompat.getColor(getApplicationContext(), R.color.windowBackground));
-        mBottomNavigation.setInactiveColor(ContextCompat.getColor(getApplicationContext(), R.color.colorPrimary));
-
+        mBottomNavigation.setAccentColor(ContextCompat.getColor(getApplicationContext(),R.color.colorPrimary));
+        mBottomNavigation.setInactiveColor(ContextCompat.getColor(getApplicationContext(),  R.color.windowBackground));
+        // 首页
+        AHBottomNavigationItem tabHome = new AHBottomNavigationItem(R.string.mine, R.drawable.ic_home);
+        mBottomNavigation.addItem(tabHome);
+        HomeFragment homeFragment = new HomeFragment();
+        mTabs.add(homeFragment);
         // 我的
+        AHBottomNavigationItem tabNotice = new AHBottomNavigationItem(R.string.mine, R.drawable.ic_mine);
+        mBottomNavigation.addItem(tabNotice);
         MineFragment mineFragment = new MineFragment();
         mTabs.add(mineFragment);
 
@@ -60,8 +68,7 @@ public class MainActivity extends BaseActivity {
                 return mTabs.get(arg0);
             }
         };
-
-        mViewPager.setOffscreenPageLimit(mTabs.size());
+        //mViewPager.setOffscreenPageLimit(mTabs.size());
         mViewPager.setAdapter(mAdapter);
         mViewPager.setCurrentItem(0);
         mBottomNavigation.setCurrentItem(0);

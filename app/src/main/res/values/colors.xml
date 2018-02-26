@@ -8,4 +8,5 @@
     <color name="textColorHint">#999999</color>
     <color name="windowBackground">#FFFFFF</color>
     <color name="windowBackgroundGrey">#EEEEEE</color>
+    <color name="white">#FFF</color>
 </resources>
