@@ -43,9 +43,9 @@ public class MainActivity extends BaseActivity {
         // 设置底部导航布局
         mBottomNavigation.setForceTitlesDisplay(true);
         mBottomNavigation.setAccentColor(ContextCompat.getColor(getApplicationContext(),R.color.colorPrimary));
-        mBottomNavigation.setInactiveColor(ContextCompat.getColor(getApplicationContext(),  R.color.windowBackground));
+        mBottomNavigation.setInactiveColor(ContextCompat.getColor(getApplicationContext(),  R.color.textColorHint));
         // 首页
-        AHBottomNavigationItem tabHome = new AHBottomNavigationItem(R.string.mine, R.drawable.ic_home);
+        AHBottomNavigationItem tabHome = new AHBottomNavigationItem(R.string.home, R.drawable.ic_home);
         mBottomNavigation.addItem(tabHome);
         HomeFragment homeFragment = new HomeFragment();
         mTabs.add(homeFragment);
