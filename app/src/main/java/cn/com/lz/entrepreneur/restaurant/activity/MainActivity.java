@@ -68,7 +68,6 @@ public class MainActivity extends BaseActivity {
                 return mTabs.get(arg0);
             }
         };
-        //mViewPager.setOffscreenPageLimit(mTabs.size());
         mViewPager.setAdapter(mAdapter);
         mViewPager.setCurrentItem(0);
         mBottomNavigation.setCurrentItem(0);
