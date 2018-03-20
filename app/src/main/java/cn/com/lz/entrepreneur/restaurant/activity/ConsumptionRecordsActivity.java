@@ -1,6 +1,9 @@
 package cn.com.lz.entrepreneur.restaurant.activity;
 
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.ImageButton;
+import android.widget.TextView;
 
 import butterknife.BindView;
 import cn.com.lz.entrepreneur.restaurant.R;
@@ -11,8 +14,14 @@ import cn.com.lz.entrepreneur.restaurant.R;
  * Date: 2018/3/20
  */
 
-public class ConsumptionRecordsActivity extends BaseActivity{
+public class ConsumptionRecordsActivity extends BaseActivity implements View.OnClickListener {
 
+    // 返回
+    @BindView(R.id.back)
+    ImageButton mBack;
+    // 标题
+    @BindView(R.id.title)
+    TextView mTitle;
     // 消费记录列表
     @BindView(R.id.consumption_recycler_view)
     RecyclerView mConsumptionList;
@@ -24,11 +33,20 @@ public class ConsumptionRecordsActivity extends BaseActivity{
 
     @Override
     protected void init() {
-
+        mTitle.setText(R.string.consumption_records);
     }
 
     @Override
     protected void setListener() {
+        mBack.setOnClickListener(this);
+    }
 
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.back:
+                finish();
+                break;
+        }
     }
 }
