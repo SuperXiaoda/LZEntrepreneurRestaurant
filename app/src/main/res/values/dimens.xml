@@ -1,0 +1,31 @@
+<resources>
+
+    <dimen name="DIP_0_5">0.5dp</dimen>
+    <dimen name="DIP_1">1dp</dimen>
+    <dimen name="DIP_3">3dp</dimen>
+    <dimen name="DIP_4">4dp</dimen>
+    <dimen name="DIP_5">5dp</dimen>
+    <dimen name="DIP_8">8dp</dimen>
+    <dimen name="DIP_10">10dp</dimen>
+    <dimen name="DIP_12">12dp</dimen>
+    <dimen name="DIP_13">13dp</dimen>
+    <dimen name="DIP_15">15dp</dimen>
+    <dimen name="DIP_16">16dp</dimen>
+    <dimen name="DIP_20">20dp</dimen>
+    <dimen name="DIP_24">24dp</dimen>
+    <dimen name="DIP_25">25dp</dimen>
+    <dimen name="DIP_30">30dp</dimen>
+    <dimen name="DIP_35">35dp</dimen>
+    <dimen name="DIP_40">40dp</dimen>
+    <dimen name="DIP_50">50dp</dimen>
+    <dimen name="DIP_60">60dp</dimen>
+    <dimen name="DIP_80">80dp</dimen>
+
+    <!-- 导航栏高度 -->
+    <dimen name="titleBarHeight">50dp</dimen>
+    <!-- 状态栏高度 -->
+    <dimen name="statusBarHeight">0dp</dimen>
+    <!--下拉刷新生效距离-->
+    <dimen name="refreshDistance">50dp</dimen>
+
+</resources>
